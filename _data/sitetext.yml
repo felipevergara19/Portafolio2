@@ -310,7 +310,7 @@ es: &DEFAULT_ES
         icon: "fab fa-twitter"
       - url: https://facebook.com
         icon: "fab fa-facebook-f"
-      - url: www.linkedin.com/in/felipevergarapeñaloza
+      - url: https://www.linkedin.com/in/felipevergarapeñaloza
         icon: "fab fa-linkedin-in"
       - url: https://github.com/felipevergara19
         icon: "fab fa-github"
