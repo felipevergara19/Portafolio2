@@ -37,13 +37,21 @@ headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtenemos el botón por su ID
+  const emailButton = document.getElementById('emailButton');
+
   // Agregamos un evento de clic al botón
-  const emailButton = document.getElementById("emailButton");
-  if (emailButton) {
-    emailButton.addEventListener("click", function() {
-      // Abrimos la aplicación de correo del usuario con la dirección de correo deseada
-      window.location.href = "felipe.vergara19@gmail.com";
-    });
-  }
+  emailButton.addEventListener('click', function () {
+    // Definimos el destinatario, asunto y cuerpo del correo
+    const destinatario = 'felipe.vergara19@gmail.com'; // Cambia esto con tu dirección de correo
+    const asunto = 'Asunto del correo';
+    const cuerpo = 'Cuerpo del correo';
+
+    // Construimos el URI del correo electrónico
+    const mailtoUri = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+
+    // Abrimos la aplicación de correo predeterminada del usuario
+    window.location.href = mailtoUri;
+  });
 });
