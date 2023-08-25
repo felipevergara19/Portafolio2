@@ -36,3 +36,14 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Agregamos un evento de clic al botón
+  const emailButton = document.getElementById("emailButton");
+  if (emailButton) {
+    emailButton.addEventListener("click", function() {
+      // Abrimos la aplicación de correo del usuario con la dirección de correo deseada
+      window.location.href = "felipe.vergara19@gmail.com";
+    });
+  }
+});
